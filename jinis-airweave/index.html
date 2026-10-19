@@ -296,7 +296,7 @@ html[data-tone="night"] .bar .logos img,html[data-tone="deep"] .bar .logos img{f
 .swap b{font-weight:700}
 .swap span{display:block;font-weight:500;letter-spacing:.04em;text-transform:none;font-size:10.5px;margin-top:2px}
 .hide-swaps .swap{display:none}
-.hero .swap{top:76px;left:auto;right:var(--gutter);max-width:300px}
+.hero .swap,.final .swap{top:76px;left:auto;right:var(--gutter);max-width:300px}
 /* partnership band */
 .partner{padding:clamp(80px,10vw,140px) 0;border-bottom:1px solid var(--rule)}
 .partner-grid{display:grid;grid-template-columns:6fr 6fr;gap:clamp(32px,6vw,96px);align-items:start}
@@ -317,7 +317,7 @@ html[data-tone="night"] .bar .logos img,html[data-tone="deep"] .bar .logos img{f
 .clock.on-aw .aw{display:inline}
 .tri .rest .with{display:block;font:500 11px var(--label);letter-spacing:.24em;text-transform:uppercase;color:#9DB5DA;margin-top:12px}
 @media (max-width:900px){.partner-grid{grid-template-columns:1fr}.lockup{gap:16px}.lockup .logo-j{height:40px}.lockup .logo-a{height:21px}.hero .swap{left:var(--gutter);right:auto}}
-@media (max-width:560px){.grade-ctl{grid-template-columns:1fr auto}.grade-ctl input{grid-column:1/-1;grid-row:2}.logos{gap:8px}.logos .logo-j{height:20px}.logos .logo-a{height:11px}.logos .wm-x{display:none}#swapToggle{display:none}.notes-toggle{padding:6px 10px;font-size:9px}}
+@media (max-width:560px){.grade-ctl{grid-template-columns:1fr auto}.grade-ctl input{grid-column:1/-1;grid-row:2}.logos{gap:8px}.logos .logo-j{height:20px}.logos .logo-a{height:11px}.logos .wm-x{display:none}.notes-toggle{padding:6px 10px;font-size:9px}}
 
 /* image fallback (if an official image cannot load) */
 img.broken{opacity:0}
@@ -381,7 +381,7 @@ img.broken{opacity:0}
 
 <header class="bar over" id="bar">
   <a class="mark logos" href="#top" aria-label="JINIS × airweave, back to top"><img class="logo-j" src="assets/jinis_logo02.svg" alt="" width="448" height="108"><span class="wm-x" aria-hidden="true">×</span><img class="logo-a" src="assets/aw_logo.png" alt="" width="542" height="78"></a>
-  
+  <span style="display:flex;gap:8px"><button class="notes-toggle" id="swapToggle" aria-pressed="true" type="button">Photo tags</button></span>
 </header>
 
 <div class="clock over" id="clock" aria-hidden="true"><span class="dial"></span><b id="clockTime">06:45</b><span id="clockWord">Dawn</span><span class="aw">· on airweave</span></div>
@@ -391,6 +391,7 @@ img.broken{opacity:0}
 <!-- 01 HERO -->
 <section class="hero" id="top" data-tone="dawn" data-time="06:45" data-word="Dawn" data-rot="200" data-over="1" aria-label="Introduction">
   <img src="assets/jinis_education_photo02.webp" alt="JINIS pupils exploring the meadows and wetland on campus in Jinsekikogen, Hiroshima" width="1700" height="960" fetchpriority="high">
+  <p class="swap"><b>Photo to replace</b><span>JINIS boarding room in morning light — a pupil sitting on the airweave mattress (white with navy piping visible).</span></p>
   <div class="wrap">
     <div class="lockup"><img class="logo-j" src="assets/jinis_logo02.svg" alt="JINIS — Jinseki International School" width="448" height="108"><span class="div"></span><img class="logo-a" src="assets/aw_logo.png" alt="airweave" width="542" height="78"></div>
     <h1 class="display">From JINIS to the World.</h1>
@@ -437,13 +438,13 @@ img.broken{opacity:0}
 
       <div class="tl-item rv" data-time="07:00" data-word="Wake" data-aw="1" data-rot="210">
         <div class="tl-time"><span>07:00</span></div>
-        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_boarding_facility_img01.webp" alt="A pupil’s individual room in the JINIS boarding house, filled with morning light" width="1120" height="630"><span class="inset"><img loading="lazy" src="assets/aw_mico_mattress.webp" alt="airweave mattress" width="200" height="200"></span></figure></div>
+        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_boarding_facility_img01.webp" alt="A pupil’s individual room in the JINIS boarding house, filled with morning light" width="1120" height="630"><p class="swap"><b>Photo to replace</b><span>Pupil waking / stretching on the airweave mattress; mattress edge, piping and label in frame; side light.</span></p><span class="inset"><img loading="lazy" src="assets/aw_mico_mattress.webp" alt="airweave mattress" width="200" height="200"></span></figure></div>
         <div class="tl-text"><p class="tl-word">WAKE</p><h3 class="h3">A morning of their own.</h3><p class="lede">Each child wakes in an individual room in the boarding house — a home away from home.<span class="aw-line">Rested, and ready.</span></p><span class="aw-tag">airweave mattress</span></div>
       </div>
 
       <div class="tl-item rv" data-time="08:20" data-word="Learn" data-aw="1" data-rot="250">
         <div class="tl-time"><span>08:20</span></div>
-        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_school_img02.webp" alt="A bright JINIS classroom with pupils at work" width="1120" height="630"><span class="inset"><img loading="lazy" src="assets/aw_cushion_nv.webp" alt="airweave seat cushion" width="200" height="200"></span></figure></div>
+        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_school_img02.webp" alt="A bright JINIS classroom with pupils at work" width="1120" height="630"><p class="swap"><b>Photo to replace</b><span>airweave seat cushion on a classroom chair, logo tag visible; pupil seen from the side/back, focused on the lesson.</span></p><span class="inset"><img loading="lazy" src="assets/aw_cushion_nv.webp" alt="airweave seat cushion" width="200" height="200"></span></figure></div>
         <div class="tl-text"><p class="tl-word">LEARN</p><h3 class="h3">Two languages, one curious mind.</h3><p class="lede">Lessons in English and Japanese, through the International Primary Curriculum.<span class="aw-line">Sitting comfortably, thinking freely.</span></p><span class="aw-tag">airweave seat cushion</span></div>
       </div>
 
@@ -467,13 +468,13 @@ img.broken{opacity:0}
 
       <div class="tl-item rv" data-time="20:15" data-word="Read" data-aw="1" data-rot="610">
         <div class="tl-time"><span>20:15</span></div>
-        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_boarding_facility_img03.webp" alt="The boarding house lobby library, lined with wooden shelves" width="560" height="315"><span class="inset"><img loading="lazy" src="assets/aw_mico_pillow.webp" alt="airweave pillow" width="200" height="200"></span></figure></div>
+        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_boarding_facility_img03.webp" alt="The boarding house lobby library, lined with wooden shelves" width="560" height="315"><p class="swap"><b>Photo to replace</b><span>Pupil reading in bed, leaning on the airweave pillow; warm lamp light.</span></p><span class="inset"><img loading="lazy" src="assets/aw_mico_pillow.webp" alt="airweave pillow" width="200" height="200"></span></figure></div>
         <div class="tl-text"><p class="tl-word">READ</p><h3 class="h3">The quiet hour.</h3><p class="lede">Reading time — the day slowing down, page by page.</p><span class="aw-tag">airweave pillow</span></div>
       </div>
 
       <div class="tl-item rv tl-night" data-time="20:45" data-word="Rest" data-aw="1" data-rot="625">
         <div class="tl-time"><span>20:45</span></div>
-        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_boarding_facility_img01.webp" alt="The same pupil’s room, now darkened for the night" width="1120" height="630"><span class="inset"><img loading="lazy" src="assets/aw_mico_hyperdown.webp" alt="airweave Hyperdown duvet" width="200" height="200"></span></figure></div>
+        <div class="tl-media"><figure><img loading="lazy" src="assets/jinis_boarding_facility_img01.webp" alt="The same pupil’s room, now darkened for the night" width="1120" height="630"><p class="swap"><b>Photo to replace</b><span>Night: pupil asleep under the airweave Hyperdown duvet, navy/blue light.</span></p><span class="inset"><img loading="lazy" src="assets/aw_mico_hyperdown.webp" alt="airweave Hyperdown duvet" width="200" height="200"></span></figure></div>
         <div class="tl-text"><p class="tl-word">REST</p><h3 class="h3">Lights out.</h3><p class="lede">Everything learned today settles in. Tomorrow is already beginning.</p><span class="aw-tag">airweave Hyperdown duvet</span></div>
       </div>
     </div>
@@ -495,6 +496,7 @@ img.broken{opacity:0}
     </article>
     <article class="rest rv d2">
       <img loading="lazy" src="assets/jinis_boarding_facility_img01.webp" alt="A boarding room at night" width="1120" height="630">
+      <p class="swap"><b>Photo to replace</b><span>Close-up of the airweave mattress in a JINIS room at dusk (texture, piping, pillow).</span></p>
       <div class="cap"><p class="label">Night</p><h3>Rest</h3><p>Where the day is quietly put away — and tomorrow is prepared.</p><span class="with">Rest — with airweave</span></div>
     </article>
   </div>
@@ -712,6 +714,7 @@ img.broken{opacity:0}
 <!-- 11 FINAL -->
 <section class="final" id="final" data-tone="dawn" data-time="07:00" data-word="Morning" data-rot="1290" data-over="1" aria-labelledby="h-final">
   <img loading="lazy" src="assets/jinis_boarding_facility_img01.webp" alt="A JINIS boarding room in soft morning light" width="1120" height="630">
+  <p class="swap"><b>Photo to replace</b><span>Pupil waking in morning light, or campus at dawn (≥2400 px).</span></p>
   <div class="wrap">
     <p class="label" style="color:rgba(255,255,255,.85)">JINIS × airweave</p>
     <h2 class="h2" id="h-final">From their first night at JINIS to wherever they go next.</h2>
@@ -723,7 +726,7 @@ img.broken{opacity:0}
 
 <footer>
   <span>JINIS — Jinseki International School × airweave</span>
-  <span>Concept draft</span>
+  <span>Concept draft · yellow tags mark photos to be replaced</span>
 </footer>
 
 <script>
@@ -761,6 +764,7 @@ img.broken{opacity:0}
   addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
 
   /* review notes */
+  var sw=d.getElementById('swapToggle');sw.addEventListener('click',function(){var off=d.body.classList.toggle('hide-swaps');sw.setAttribute('aria-pressed',!off)});
 
   /* growing-up diagram: child beside a height pillar, age 6 to 12 (illustrative proportions) */
   var kid=d.getElementById('kid'),marks=d.getElementById('marks'),gr=d.getElementById('grade'),go=d.getElementById('gradeOut');
